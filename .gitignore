@@ -1,1 +1,48 @@
-owoer-tech/
+# 安全 - 凭证/密钥
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.cert
+config.json
+credentials*
+secret*
+token*
+
+# 安全 - SSH/证书
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# 安全 - 日志含信息
+*.log
+
+# 安全 - 系统文件
+.DS_Store
+Thumbs.db
+
+# 代码构建
+__pycache__/
+*.pyc
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 量化 - 策略可执行代码（只传思路文档）
+quant-trading/strategies/*.py
+quant-trading/strategies/*.js
+!quant-trading/strategies/README.md
+
+# 量化 - 回测数据（太大不传）
+quant-trading/backtests/data/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
