@@ -107,8 +107,12 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
 - WiFi 修复: Captive portal 禁用 (captive_portal_detection_enabled=0)
 - SSH 密钥: `~/BACKUP_DIR/SSH_KEY_NAME`
 
-**备份位置：** `~/redmi-刷机备份/` — 180MB
+**备份位置：** `~/BACKUP_DIR/` — 180MB
 包含：stock_boot / magisk / OrangeFox / 编译脚本 / SSH密钥
+
+**详细文档：**
+- [刷机步骤详解](./redmi-flash-guide.md) — 从 Fastboot 到 chroot 自启的完整步骤
+- [NetHunter 汉化记录](./nethunter-hanhua-guide.md) — 712 条翻译 v1→v4 四版迭代
 
 **连接方式：**
 | 方式 | 说明 |
