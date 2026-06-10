@@ -27,7 +27,7 @@
 **状态：** 红米使用官方 Kali Nethunter 镜像，内核 3.18.31-perf
 
 ```
-设备: 红米 Note 4X → 反向隧道:2222 → VPS
+设备: 红米 Note 4X → 反向隧道:SSH_PORT → VPS
 连接: 通过 USB 连 Win10 (ADB), 或移动网 4G
 ```
 
@@ -39,7 +39,7 @@
 
 **隧道架构：**
 ```
-VPS(VPS_IP:22022) ← 红米:2222(autossh) ← Win10:6699 → Win10 代理
+VPS(VPS_IP:SSH_PORT) ← 红米:TUN_PORT(autossh) ← Win10:PROXY_PORT → Win10 代理
 红米通过 USB 连 Win10，Win10 通过 ADB 控制红米
 ```
 
@@ -114,12 +114,12 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
 | 方式 | 说明 |
 |:---|:---|
 | ADB | `adb shell` |
-| SSH chroot | `ssh -i redmi_key root@192.168.43.142` |
+| SSH chroot | `ssh -i KEY_NAME root@ROOTER_LAN_IP` |
 | chroot 内工具 | msfconsole, nmap, sqlmap, aircrack-ng 等 |
 
 **待办（用户叫停）：**
 - MSF payload APK + meterpreter session
-- 反向 SSH 隧道 (红米→VPS:2222)
+- 反向 SSH 隧道 (红米→VPS:TUN_PORT)
 
 ---
 
@@ -153,12 +153,12 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
                           ┌─────────────────┐
                           │   VPS 腾讯云     │
                           │   VPS_IP        │
-                          │  :22022 (SSH)   │
+                          │  :SSH_PORT     │
                           └──────┬──────────┘
                                  │
                     ┌────────────┼────────────┐
                     │            │            │
-               SSH:2222      SSH:22222     SSH:6699
+               SSH:TUN_PORT SSH:ASUS_PORT SSH:PROXY_PORT
                     │            │            │
               ┌─────┴─────┐ ┌───┴────┐ ┌───┴────┐
               │ 红米 mido  │ │ASUS    │ │Win10   │
@@ -169,8 +169,8 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
 
 | 节点 | 连接方式 | 隧道 | 状态 |
 |:---|:---|:---|:---:|
-| **红米** | VPS:2222 → 红米 chroot SSH | autossh 自启 | ✅ |
-| **ASUS Kali** | VPS:22222 → ASUS SSH | autossh 自启 | ✅ |
+| **红米** | VPS:TUN_PORT → 红米 chroot SSH | autossh 自启 | ✅ |
+| **ASUS Kali** | VPS:ASUS_PORT → ASUS SSH | autossh 自启 | ✅ |
 | **Win10** | VPS → Win10:6699 | 中间代理 | ❌ 断连 |
 
 ---
