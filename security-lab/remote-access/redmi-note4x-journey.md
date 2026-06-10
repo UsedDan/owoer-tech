@@ -155,7 +155,7 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
 
 ```
                           ┌─────────────────┐
-                          │   VPS 腾讯云     │
+                          │   VPS_CLOUD     │
                           │   VPS_IP        │
                           │  :SSH_PORT     │
                           └──────┬──────────┘
@@ -175,7 +175,7 @@ Android 原生 shell 中 `/bin/sh` 不存在（只有 `/system/bin/sh`），
 |:---|:---|:---|:---:|
 | **红米** | VPS:TUN_PORT → 红米 chroot SSH | autossh 自启 | ✅ |
 | **ASUS Kali** | VPS:ASUS_PORT → ASUS SSH | autossh 自启 | ✅ |
-| **Win10** | VPS → Win10:6699 | 中间代理 | ❌ 断连 |
+| **Win10** | VPS → Win10:PROXY_PORT | 中间代理 | ❌ 断连 |
 
 ---
 
