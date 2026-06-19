@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- 深色圆角方块背景 -->
+  <rect width="32" height="32" rx="6" fill="#1f2937"/>
+  <!-- "U" -->
+  <text x="7" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e5e7eb">U</text>
+  <!-- "D" -->
+  <text x="17" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#818cf8">D</text>
+</svg>

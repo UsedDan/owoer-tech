@@ -1,0 +1,318 @@
+/* ============================================
+   Owoer Knowledge Base — 翠绿主题
+   ============================================ */
+
+/* --- 品牌色定义 (翠绿) --- */
+:root {
+  --vp-c-brand-1: #059669;
+  --vp-c-brand-2: #047857;
+  --vp-c-brand-3: #10b981;
+  --vp-c-brand-soft: rgba(5, 150, 105, 0.14);
+
+  --vp-c-green-1: #059669;
+  --vp-c-green-2: #047857;
+  --vp-c-green-3: #10b981;
+  --vp-c-green-soft: rgba(5, 150, 105, 0.14);
+
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
+  --vp-c-brand-soft: var(--vp-c-green-soft);
+
+  --vp-c-brand-light: var(--vp-c-green-1);
+  --vp-c-brand-lighter: var(--vp-c-green-2);
+  --vp-c-brand-dark: var(--vp-c-green-3);
+  --vp-c-brand-darker: #065f46;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #059669 30%, #34d399);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #059669 50%, #34d399 50%);
+  --vp-home-hero-image-filter: blur(68px);
+
+  --vp-button-brand-border: var(--vp-c-brand-1);
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: var(--vp-c-brand-2);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+
+  --vp-custom-block-tip-border: var(--vp-c-brand-1);
+  --vp-custom-block-tip-text: var(--vp-c-brand-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+}
+
+
+/* ============================================
+   毛玻璃导航栏
+   ============================================ */
+.VPNav .VPNavBar {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: saturate(180%) blur(16px) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(16px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.dark .VPNav .VPNavBar {
+  background-color: rgba(18, 18, 18, 0.6) !important;
+  backdrop-filter: saturate(180%) blur(16px) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* 导航栏内部背景透明 */
+.VPNav .VPNavBar .container {
+  background: transparent !important;
+}
+
+.VPNav .VPNavBar .content {
+  background: transparent !important;
+}
+
+.VPNav .VPNavBar .divider {
+  display: none;
+}
+
+/* 移动端菜单也毛玻璃 */
+.VPNav .VPNavBar .VPNavScreen {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+}
+
+.dark .VPNav .VPNavBar .VPNavScreen {
+  background-color: rgba(18, 18, 18, 0.85) !important;
+}
+
+/* Logo 区域适配 */
+.VPNav .VPNavBar .VPNavBarTitle .title {
+  font-size: 0;
+}
+
+
+/* ============================================
+   Hero 区域 — 首页
+   ============================================ */
+.VPHero .name {
+  line-height: 1.2;
+}
+
+.VPHero .actions {
+  margin-top: 1.5rem;
+}
+
+.VPHome .VPHero .image-bg {
+  opacity: 0.15;
+}
+
+
+/* ============================================
+   特性卡片
+   ============================================ */
+.VPFeature {
+  border: 1px solid var(--vp-c-gutter) !important;
+  transition: all 0.25s ease !important;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.1);
+  transform: translateY(-2px);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.2);
+}
+
+
+/* ============================================
+   代码块 — 深色主题
+   ============================================ */
+:root {
+  --vp-code-block-bg: #1e1e2e;
+  --vp-code-line-highlight-color: rgba(5, 150, 105, 0.08);
+}
+
+.vp-doc [class*='language-'] {
+  background-color: #1e1e2e !important;
+  border-radius: 8px;
+}
+
+.vp-doc [class*='language-'] code {
+  color: #cdd6f4;
+}
+
+/* 代码高亮颜色覆盖 */
+.vp-doc .token.comment,
+.vp-doc .token.prolog,
+.vp-doc .token.doctype,
+.vp-doc .token.cdata {
+  color: #6c7086;
+}
+
+.vp-doc .token.punctuation {
+  color: #9399b2;
+}
+
+.vp-doc .token.property,
+.vp-doc .token.tag,
+.vp-doc .token.boolean,
+.vp-doc .token.number,
+.vp-doc .token.constant,
+.vp-doc .token.symbol,
+.vp-doc .token.deleted {
+  color: #f38ba8;
+}
+
+.vp-doc .token.selector,
+.vp-doc .token.attr-name,
+.vp-doc .token.string,
+.vp-doc .token.char,
+.vp-doc .token.builtin,
+.vp-doc .token.inserted {
+  color: #a6e3a1;
+}
+
+.vp-doc .token.operator,
+.vp-doc .token.entity,
+.vp-doc .token.url,
+.vp-doc .language-css .token.string,
+.vp-doc .style .token.string {
+  color: #94e2d5;
+}
+
+.vp-doc .token.atrule,
+.vp-doc .token.attr-value,
+.vp-doc .token.keyword {
+  color: #cba6f7;
+}
+
+.vp-doc .token.function,
+.vp-doc .token.class-name {
+  color: #89b4fa;
+}
+
+.vp-doc .token.regex,
+.vp-doc .token.important,
+.vp-doc .token.variable {
+  color: #f9e2af;
+}
+
+/* 代码块复制按钮 */
+.vp-doc .copy {
+  opacity: 0.6;
+}
+
+.vp-doc .copy:hover {
+  opacity: 1;
+}
+
+
+/* ============================================
+   自定义块样式（提示、警告等）
+   ============================================ */
+.custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.warning {
+  border-color: #f59e0b;
+}
+
+.custom-block.danger {
+  border-color: #ef4444;
+}
+
+/* ============================================
+   表格样式
+   ============================================ */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc td,
+.vp-doc th {
+  padding: 8px 16px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+
+/* ============================================
+   上一篇 / 下一篇
+   ============================================ */
+.prev-next-area {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 1rem;
+}
+
+
+/* ============================================
+   自定义 404 页面
+   ============================================ */
+.vp-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.vp-404 h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #059669 30%, #34d399);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.vp-404 p {
+  font-size: 1.2rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 2rem;
+}
+
+
+/* ============================================
+   滚动条
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+
+/* ============================================
+   响应式微调
+   ============================================ */
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2rem !important;
+  }
+
+  .VPHero .text {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48">
+  <!-- 导航栏水平文字标 -->
+  <text x="0" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="currentColor" letter-spacing="-0.5">Used</text>
+  <!-- 装饰分隔点 -->
+  <circle cx="68" cy="14" r="2.5" fill="currentColor" opacity="0.4"/>
+  <text x="78" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="currentColor" letter-spacing="-0.5">Dan</text>
+  <!-- 底部细线装饰 -->
+  <line x1="0" y1="44" x2="142" y2="44" stroke="currentColor" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/>
+</svg>
