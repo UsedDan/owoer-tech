@@ -98,6 +98,11 @@ export default defineConfig({
         link: '/zh/book3-quant/',
         activeMatch: '/zh/book3-quant/',
       },
+      {
+        text: '渗透测试',
+        link: '/zh/book4-pentest/',
+        activeMatch: '/zh/book4-pentest/',
+      },
     ],
 
               sidebar: {
@@ -664,6 +669,43 @@ export default defineConfig({
                             },
                           ],
                         }
+                    ],
+                  },
+                ],
+                '/zh/book3-quant/': [
+                  {
+                    text: '量化交易',
+                    link: '/zh/book3-quant/',
+                    items: [
+                      { text: '📖 概览', link: '/zh/book3-quant/' },
+                      { text: '🔗 Ptrade 外部互联方案', link: '/zh/book3-quant/ptrade-guide' },
+                      { text: '📈 PE/PEG 股票估值入门', link: '/zh/book3-quant/pe-peg-valuation' },
+                    ],
+                  },
+                ],
+                '/zh/book4-pentest/': [
+                  {
+                    text: '渗透测试',
+                    link: '/zh/book4-pentest/',
+                    items: [
+                      { text: '📖 概览', link: '/zh/book4-pentest/' },
+                      {
+                        text: '🔧 路由器渗透测试',
+                        collapsed: true,
+                        items: [
+                          { text: 'Kali Linux 路由器渗透测试指南', link: '/zh/book4-pentest/kali-router-guide' },
+                          { text: '华为 CPE 渗透测试步骤', link: '/zh/book4-pentest/huawei-cpe-pentest' },
+                          { text: '渗透测试常用工具速查', link: '/zh/book4-pentest/tools-cheatsheet' },
+                        ],
+                      },
+                      {
+                        text: '🤖 Web 自动化',
+                        collapsed: true,
+                        items: [
+                          { text: '反检测浏览器实践指南', link: '/zh/book4-pentest/anti-detection-browser' },
+                          { text: '在线教育平台渗透笔记', link: '/zh/book4-pentest/education-platform-pentest' },
+                        ],
+                      },
                     ],
                   },
                 ],
