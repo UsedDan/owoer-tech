@@ -41,10 +41,15 @@ jobs:
 
       - uses: actions/configure-pages@v4
 
+      - name: Wrap output in knowledge-base/ subdirectory
+        run: |
+          mkdir -p /tmp/pages-output/knowledge-base
+          cp -r .vitepress/dist/* /tmp/pages-output/knowledge-base/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./knowledge-base/.vitepress/dist
+          path: /tmp/pages-output
 
   deploy:
     needs: build
