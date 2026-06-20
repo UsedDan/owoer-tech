@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Owoer 知识库"
-  text: "中医师承 · 程序员的英语 · 量化交易"
+  text: "中医师承 · 量化交易 · 渗透测试 · SRC 漏洞挖掘"
   tagline: 一个持续积累的技术知识库，由 Used Dan 维护
   image:
     src: /logo.svg
@@ -34,5 +34,17 @@ features:
     title: 量化交易
     details: Python 量化交易知识整理，策略开发、回测框架、风险管理等实用内容。
     link: /zh/book3-quant/
+    linkText: 查看详情 →
+
+  - icon: 🛡️
+    title: 渗透测试
+    details: 路由器渗透测试、Web 自动化、工具速查等安全研究笔记，仅用于授权测试。
+    link: /zh/book4-pentest/
+    linkText: 查看详情 →
+
+  - icon: 🎯
+    title: SRC 漏洞挖掘
+    details: PortSwigger 靶场通关记录，涵盖路径穿越、越权、SSRF、SQL注入等 Web 漏洞基础。
+    link: /zh/book5-src-learning/
     linkText: 查看详情 →
 ---
