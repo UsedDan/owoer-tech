@@ -714,8 +714,7 @@ export default defineConfig({
                     ],
                   },
                 ],
-              },
-              '/zh/book5-src-learning/': [
+                '/zh/book5-src-learning/': [
                 {
                   text: 'SRC 漏洞挖掘',
                   link: '/zh/book5-src-learning/',
@@ -725,6 +724,7 @@ export default defineConfig({
                   ],
                 },
               ],
+            },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/UsedDan' },
