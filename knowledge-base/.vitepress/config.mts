@@ -103,6 +103,11 @@ export default defineConfig({
         link: '/zh/book4-pentest/',
         activeMatch: '/zh/book4-pentest/',
       },
+      {
+        text: 'SRC 学习',
+        link: '/zh/book5-src-learning/',
+        activeMatch: '/zh/book5-src-learning/',
+      },
     ],
 
               sidebar: {
@@ -710,6 +715,16 @@ export default defineConfig({
                   },
                 ],
               },
+              '/zh/book5-src-learning/': [
+                {
+                  text: 'SRC 漏洞挖掘',
+                  link: '/zh/book5-src-learning/',
+                  items: [
+                    { text: '📖 概览', link: '/zh/book5-src-learning/' },
+                    { text: '📝 PortSwigger Day1 笔记', link: '/zh/book5-src-learning/notes-day1' },
+                  ],
+                },
+              ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/UsedDan' },
